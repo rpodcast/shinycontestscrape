@@ -12,6 +12,7 @@
 #' @import progress
 #' @export
 get_post_links <- function(url, add_sleep = TRUE, pb = NULL) {
+  links <- NULL
   if (add_sleep) Sys.sleep(0.4)
 
   if (!is.null(pb)) {

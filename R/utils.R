@@ -16,6 +16,8 @@ tidy_post_metadata <- function(x) {
   return(df)
 }
 
+#' @import stringr
+#' @noRd
 extract_rstudiocloud_link <- function(links) {
   res <- stringr::str_subset(links, pattern = "rstudio.cloud")
 
@@ -23,12 +25,17 @@ extract_rstudiocloud_link <- function(links) {
   return(res)
 }
 
+#' @import stringr
+#' @noRd
 extract_shinyapp_link <- function(links) {
   res <- stringr::str_subset(links, pattern = "shinyapps.io")
   if (length(res) < 1) res <- NA
   return(res)
 }
 
+#' @import stringr
+#' @import purrr
+#' @noRd
 extract_repo_link <- function(links) {
   res <- stringr::str_subset(links, pattern = "github.com")
   if (length(res) > 1) {

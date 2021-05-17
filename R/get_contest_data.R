@@ -10,6 +10,7 @@
 #' @import dplyr
 #' @export
 get_contest_data <- function(year = 2021, add_sleep = TRUE, show_progress = TRUE) {
+  links <- NULL
   if (year != 2021) {
     stop("Only the 2021 Shiny Contest is supported at this time.", call. = FALSE)
   }
