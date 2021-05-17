@@ -30,7 +30,7 @@ df <- get_contest_data()
 
 I am using [`{renv}`](https://rstudio.github.io/renv/) to manage the dependencies for the package. After cloning the repository, you should be able to install the development package library with a call to `renv::restore()` after launching your R session.
 
-If you are interested in using a containerized development workflow, the `.devcontainer` subdirectory contains Docker configurations to support a containerized RStudio server and Visual Studio Code environments. If you would like more background on this idea, please see my [rpodcast/r_dev_projects](https://github.com/rpodcast/r_dev_projects) GitHub repo and the recording from my previous [Shiny Developer Series](https::shinydevseries.com) livestream on [YouTube](https://www.youtube.com/watch?v=4wRiPG9LM3o).
+If you are interested in using a containerized development workflow, the `.devcontainer` subdirectory contains Docker configurations to support a containerized RStudio server and Visual Studio Code environments. If you would like more background on this idea, please see my [rpodcast/r_dev_projects](https://github.com/rpodcast/r_dev_projects) GitHub repo and the recording from my previous [Shiny Developer Series](https://shinydevseries.com) livestream on [YouTube](https://www.youtube.com/watch?v=4wRiPG9LM3o).
 
 ### Current Issues
 
