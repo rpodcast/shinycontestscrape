@@ -4,10 +4,10 @@
 # - license: GPLV2
 ##################################################################################################################################################################
 
-FROM rocker/r-ver:4.0.3
+FROM rocker/r-ver:4.0.5
 
 ENV S6_VERSION=v1.21.7.0
-ENV RSTUDIO_VERSION=preview
+ENV RSTUDIO_VERSION=latest
 ENV PATH=/usr/lib/rstudio-server/bin:$PATH
 
 # install key dependencies of rstudio preview edition
@@ -25,7 +25,7 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends libxml2-dev libsodium-dev libssl-dev imagemagick libmagick++-dev libgit2-dev libssh2-1-dev zlib1g-dev librsvg2-dev libudunits2-dev libfontconfig1-dev libfreetype6-dev 
 
 # install R packages needed for VSCode interaction and package management
-RUN install2.r languageserver renv remotes
+RUN install2.r languageserver renv remotes usethis devtools
 
 # install radian via python and pip3
 RUN apt-get update \

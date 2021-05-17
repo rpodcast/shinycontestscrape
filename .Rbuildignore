@@ -1,0 +1,7 @@
+^renv$
+^renv\.lock$
+^shinycontestscrape\.Rproj$
+^\.Rproj\.user$
+^dev$
+^CODE_OF_CONDUCT\.md$
+^\.devcontainer$

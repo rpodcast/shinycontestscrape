@@ -3,7 +3,7 @@
 # licence: MIT
 ###################################################################################################################
 
-FROM rocker/r-ver:4.0.3
+FROM rocker/r-ver:4.0.5
 
 # Options for setup script
 ARG INSTALL_ZSH="false"
